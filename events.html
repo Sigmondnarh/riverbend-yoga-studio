@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshops and events | Riverbend Yoga Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p>Riverbend Yoga Studio</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Classes and services</a></li>
+        <li><a href="about.html">About our studio</a></li>
+        <li><a href="events.html" aria-current="page">Workshops and interest form</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Workshops and events</h1>
+    <section>
+      <h2>Sample monthly workshops</h2>
+      <ul>
+        <li>First Saturday: Yoga for beginners</li>
+        <li>Second Saturday: Mindful breathing</li>
+        <li>Third Saturday: Gentle mobility</li>
+        <li>Fourth Saturday: Restorative relaxation</li>
+      </ul>
+      <figure>
+        <img src="media/yoga-workshop_c.png" width="320"
+          alt="Instructor facing a group seated on yoga mats">
+        <figcaption>Practice together in a supportive workshop.</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h2>Request a spot</h2>
+      <p>This demonstration form does not send a reservation.
+        Fields marked required must be completed.</p>
+      <form action="events.html" method="post">
+        <fieldset>
+          <legend>Your contact details</legend>
+          <p><label for="name">Name (required)</label>
+            <input id="name" name="name" autocomplete="name" required></p>
+          <p><label for="email">Email (required)</label>
+            <input id="email" name="email" type="email"
+              autocomplete="email" required></p>
+          <p><label for="contact">Preferred contact method (required)</label>
+            <select id="contact" name="contact" required>
+              <option value="">Choose a method</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select></p>
+          <p><label for="phone">Phone (if preferred)</label>
+            <input id="phone" name="phone" type="tel"
+              autocomplete="tel"></p>
+        </fieldset>
+        <fieldset>
+          <legend>Your yoga interests</legend>
+          <p><label for="interest">Class or event interest (required)</label>
+            <select id="interest" name="interest" required>
+              <option value="">Choose an interest</option>
+              <option>Gentle yoga</option><option>Vinyasa yoga</option>
+              <option>Restorative yoga</option><option>Private session</option>
+              <option>Beginner workshop</option><option>Mindful breathing</option>
+              <option>Gentle mobility</option><option>Restorative workshop</option>
+            </select></p>
+          <p><label for="experience">Experience level (required)</label>
+            <select id="experience" name="experience" required>
+              <option value="">Choose your level</option>
+              <option>New to yoga</option><option>Some experience</option>
+              <option>Regular practitioner</option>
+            </select></p>
+          <p><label for="message">Message (optional)</label>
+            <textarea id="message" name="message" rows="4"
+              maxlength="1000"></textarea></p>
+        </fieldset>
+        <button type="submit">Request a spot</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Riverbend Yoga Studio | Movement for every body.</p>
+  </footer>
+</body>
+</html>

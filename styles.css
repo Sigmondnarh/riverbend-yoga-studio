@@ -1,0 +1,22 @@
+:root { --forest:#28483F; --sage:#B8C9B0; --cream:#F7F4EC; --ink:#292D2B; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--cream); color:var(--ink); font: 1.125rem/1.65 Arial,sans-serif; }
+header, footer { background:var(--forest); color:var(--cream); padding:1.25rem max(1rem,calc((100% - 1100px)/2)); }
+header > p { font: bold 1.65rem Georgia,serif; margin:0 0 1rem; }
+nav ul { display:flex; flex-direction:column; gap:.5rem; list-style:none; padding:0; margin:0; }
+nav a { display:block; color:var(--cream); padding:.55rem .75rem; border-radius:.4rem; }
+nav a[aria-current], nav a:hover { background:var(--sage); color:var(--ink); }
+main { max-width:1100px; margin:auto; padding:1.5rem 1rem; display:flex; flex-direction:column; gap:1.25rem; }
+h1,h2,h3 { font-family:Georgia,serif; color:var(--forest); line-height:1.25; }
+h1 { font-size:2.2rem; margin:.5rem 0; }
+h2 { font-size:1.55rem; margin:0 0 .75rem; }
+h3 { font-size:1.25rem; }
+section { padding:1.25rem; border:2px solid var(--sage); border-radius:1rem; min-width:0; }
+section:nth-of-type(even) { background:var(--sage); }
+img { display:block; width:100%; max-width:100%; height:auto; border-radius:.65rem; }
+figure { margin:1rem 0; } figcaption { font-size:1rem; margin-top:.5rem; }
+a { color:var(--forest); font-weight:bold; }
+section > a, button { display:inline-block; background:var(--forest); color:var(--cream); padding:.75rem 1rem; border-radius:.5rem; border:2px solid var(--forest); font: bold 1rem/1.5 Arial,sans-serif; }
+:focus-visible { outline:3px solid var(--ink); outline-offset:4px; } header :focus-visible { outline-color:var(--cream); }
+form { display:flex; flex-direction:column; gap:1rem; } fieldset { min-width:0; border:2px solid var(--forest); border-radius:.5rem; padding:1rem; } legend { font-weight:bold; } label { display:block; font-weight:bold; } input,select,textarea { width:100%; padding:.65rem; font:inherit; color:var(--ink); background:var(--cream); border:1px solid var(--forest); border-radius:.3rem; } audio { width:100%; } footer p { margin:0; }
+@media (min-width: 800px) { nav ul { flex-direction:row; flex-wrap:wrap; } main { flex-direction:row; flex-wrap:wrap; gap:1.5rem; padding:2rem 1rem; } h1 { flex:0 0 100%; font-size:3rem; } main > section { flex:1 1 44%; padding:1.75rem; } }
